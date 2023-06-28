@@ -29,7 +29,7 @@ const Navbar = () => {
         <Link to="/" style={{
           textDecoration: 'none',
           color: '#3A1212',
-          borderBottom:'3px solid #FF2625'
+          borderBottom:'3px solid ##5374e0'
         }}>
           Home
         </Link>
