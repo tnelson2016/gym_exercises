@@ -39,7 +39,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
     return (
         <Stack alignItems="center" mt="37px" justifyContent="center" p="20px">
             <Typography
-                fontWeight={700}
+                fontWeight={500}
                 sx={{
                     fontSize: { lg: '44px', xs: '30px' },
                 }}
@@ -73,7 +73,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
                 <Button
                     className="search-btn"
                     sx={{
-                        bgcolor: '#ff2625',
+                        bgcolor: '#076385',
                         color: '#fff',
                         textTransform: 'none',
                         width: { lg: '175px', xs: '80px' },

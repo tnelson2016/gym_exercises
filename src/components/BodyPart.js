@@ -11,7 +11,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
             justifyContent="center"
             className="bodyPart-card"
             sx={{
-                borderTop: bodyPart === item ? '4px solid #ff2625' : '',
+                borderTop: bodyPart === item ? '4px solid #076385' : '',
                 backgroundColor: 'fff',
                 borderBottomLeftRadius: '20px',
                 width: '270px',
@@ -27,8 +27,9 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
             <img
                 src={Icon}
                 alt="dumbell"
-                style={{ width: '40px', height: '40px' }}
+                style={{ width: '140px', height: '140px' }}
             />
+
             <Typography
                 fontSize="24px"
                 fontWeight="bold"

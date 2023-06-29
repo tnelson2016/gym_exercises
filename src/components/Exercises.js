@@ -5,7 +5,7 @@ import { Box, Stack, Typography } from '@mui/material'
 import { exerciseOptions, fetchData } from '../utils/fetchData'
 import ExerciseCard from './ExerciseCard'
 
-const Exercises = ({ exercises, setExercises, bodyPart }) => {
+const Exercises = ({ exercises, setExercises, bodyPart, name }) => {
     const [currentPage, setCurrentPage] = useState(1)
     const exercisesPerPage = 9
 
@@ -43,7 +43,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
     return (
         <Box id="exercises" sx={{ mt: { lg: '110px' } }} mt="50px" p="20px">
             <Typography variant="h3" mb="46px">
-                Showing Results
+                Showing Results for
             </Typography>
             <Stack
                 direction="row"
