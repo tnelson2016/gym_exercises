@@ -7,6 +7,7 @@ import EquipmentImage from '../assets/icons/equipment.png'
 
 const Detail = ({ exerciseDetail }) => {
     const { bodyPart, gifUrl, name, target, equipment } = exerciseDetail
+    console.log(gifUrl)
 
     const extraDetail = [
         {
@@ -35,7 +36,7 @@ const Detail = ({ exerciseDetail }) => {
             <img
                 src={gifUrl}
                 alt={name}
-                loading="lazy"
+                Loading="lazy"
                 className="detail-image"
             />
             <Stack sx={{ gap: { lg: '35px', xs: '20px' } }}>
@@ -43,21 +44,20 @@ const Detail = ({ exerciseDetail }) => {
                 <Typography variant="h6">
                     Exercises keep you strong. {name} is one of the best
                     exercises to target your {target}. It will help you improve
-                    your mood and gain energy.
+                    you mood and gain energy.
                 </Typography>
                 {extraDetail.map((item) => (
                     <Stack
                         key={item.name}
                         direction="row"
                         gap="24px"
-                        alignItem="center"
+                        alignItems="center"
                     >
                         <Button
                             sx={{
                                 background: '#fff2db',
                                 borderRadius: '50%',
                                 width: '100px',
-                                height: '100px',
                             }}
                         >
                             <img
@@ -66,7 +66,7 @@ const Detail = ({ exerciseDetail }) => {
                                 style={{ width: '50px', height: '50px' }}
                             />
                         </Button>
-                        <Typography variant="h5" textTransform="capitalize">
+                        <Typography textTransform="capitalize" variant="h5">
                             {item.name}
                         </Typography>
                     </Stack>
